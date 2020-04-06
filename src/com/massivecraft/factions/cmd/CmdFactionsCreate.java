@@ -63,13 +63,13 @@ public class CmdFactionsCreate extends FactionsCommand
 		// NOTE: join event cannot be cancelled or you'll have an empty faction
 		
 		// Inform
-		msg("<i>You created the faction %s", faction.getName(msender));
+		msg("<i>Tu as créé la faction : %s", faction.getName(msender));
 		message(Mson.mson(mson("You should now: ").color(ChatColor.YELLOW), CmdFactions.get().cmdFactionsDescription.getTemplate()));
 		
 		// Log
 		if (MConf.get().logFactionCreate)
 		{
-			Factions.get().log(msender.getName() + " created a new faction: " + newName);
+			Factions.get().log(msender.getName() + " À Créé la faction: " + newName);
 		}
 	}
 	
