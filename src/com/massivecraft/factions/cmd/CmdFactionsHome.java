@@ -46,7 +46,7 @@ public class CmdFactionsHome extends FactionsCommandHome
 	{
 		if ( ! MConf.get().homesTeleportCommandEnabled)
 		{
-			msender.msg("<b>Sorry, the ability to teleport to Faction homes is disabled on this server.");
+			msender.msg("<b>Désolé,les téléportations aux bases sont désactivés.");
 			return;
 		}
 		
@@ -73,7 +73,7 @@ public class CmdFactionsHome extends FactionsCommandHome
 		
 		if ( ! MConf.get().homesTeleportAllowedFromEnemyTerritory && msender.isInEnemyTerritory())
 		{
-			msender.msg("<b>You cannot teleport to %s <b>while in the territory of an enemy faction.", homeDesc);
+			msender.msg("<b>Vous ne pouvez pas vous téléporter dans %s <b>while in the territory of an enemy faction.", homeDesc);
 			return;
 		}
 		
