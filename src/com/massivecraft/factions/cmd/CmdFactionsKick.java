@@ -39,7 +39,7 @@ public class CmdFactionsKick extends FactionsCommand
 		// Validate
 		if (msender == mplayer)
 		{
-			msg("<b>You can't kick yourself.");
+			msg("<b>Tu as été kické de t fction.");
 			message(mson(mson("You might want to: ").color(ChatColor.YELLOW), CmdFactions.get().cmdFactionsLeave.getTemplate(false)));
 			return;
 		}
